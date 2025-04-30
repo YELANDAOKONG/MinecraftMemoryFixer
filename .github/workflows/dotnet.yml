@@ -76,7 +76,7 @@ jobs:
       shell: pwsh
     
     - name: Upload Build Artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: app-${{ env.VERSION }}-${{ matrix.rid }}
         path: ./app-${{ env.VERSION }}-${{ matrix.rid }}.zip
